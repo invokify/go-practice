@@ -14,11 +14,7 @@ func NewBst(i int) *BinarySearchTree {
 // Insert inserts an int into the BinarySearchTree.
 // Inserts happen based on the rules of a binary search tree
 func (bst *BinarySearchTree) Insert(i int) {
-	if i == bst.data {
-		return
-	}
-
-	if i < bst.data {
+	if i <= bst.data {
 		if bst.left != nil {
 			bst.left.Insert(i)
 			return

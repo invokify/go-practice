@@ -17,6 +17,7 @@ func TestBinarySearchTree(t *testing.T) {
 		{"Test case 3", []int{4, 6, 5, 7, 2, 1, 3}, []int{1, 2, 3, 4, 5, 6, 7}},
 		{"Test case 4", []int{4, 2, 1, 3, 6, 5, 7}, []int{1, 2, 3, 4, 5, 6, 7}},
 		{"Test case 5", []int{4, 7, 6, 5, 2, 3, 1}, []int{1, 2, 3, 4, 5, 6, 7}},
+		{"Test case 6", []int{4, 4}, []int{4, 4}},
 	}
 
 	// Test each case
