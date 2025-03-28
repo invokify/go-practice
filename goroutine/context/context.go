@@ -1,4 +1,4 @@
-package goroutine
+package context
 
 import (
 	"context"
@@ -49,7 +49,7 @@ func worker(ctx context.Context, id int, output chan<- string) {
 			output <- fmt.Sprintf("Worker %d shutting down", id)
 			return
 		default:
-			fmt.Printf("Worker %d doing work", id)
+			fmt.Printf("Worker %d doing work...\n", id)
 			time.Sleep(1 * time.Second)
 		}
 	}
